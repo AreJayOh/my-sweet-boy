@@ -132,10 +132,10 @@ export default function LandingPage() {
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/1.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.jpg" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/2.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.jpg" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             <p>
@@ -150,10 +150,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/3.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/4.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             You've shown me what it means to truly care for someone. The way you
