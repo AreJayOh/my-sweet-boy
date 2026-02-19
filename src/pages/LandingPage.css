@@ -1,0 +1,283 @@
+/* Heart container */
+.heart-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* Heart photo base styles */
+.heart-photo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* Heart photo animation on scroll */
+.heart-photo.heart-photo-visible {
+  animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.heart-photo:not(.heart-photo-visible) {
+  opacity: 1;
+  animation: popOut 0.2s forwards;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes popOut {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+  }
+}
+
+
+/* Heart photo hover and expanded states */
+.heart-photo:hover,
+.heart-photo.expanded {
+  transform: translate(-50%, -50%) scale(1.25);
+  z-index: 20;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Title animation */
+.heart-title-hidden {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.heart-title-visible {
+  opacity: 1;
+  animation: titleBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.5s forwards;
+}
+
+@keyframes titleBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive sizes for larger screens */
+@media (min-width: 768px) {
+  .heart-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .heart-photo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heart-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .heart-photo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heart-container {
+    width: 600px;
+    height: 600px;
+  }
+
+  .heart-photo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Bounce animation for heart icon */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+
+
+
+/* Love section styles */
+.love-section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.love-paragraph-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.love-paragraph {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #1f2937;
+  font-weight: 300;
+  padding: 3rem;
+  background: white;
+  border-radius: 1rem;
+  transition: box-shadow 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.love-paragraph-container:nth-of-type(2n + 2).active2 .love-paragraph {
+  box-shadow: 0 0 0 10px rgba(240, 222, 59, 0.986);
+}
+
+.love-paragraph-container:nth-of-type(2n + 1).active2 .love-paragraph {
+  box-shadow: 0 0 0 10px rgb(174, 110, 218);
+}
+
+@media (max-width: 768px) {
+  .love-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: 2rem;
+  }
+}
+
+/* Image animations */
+.love-image {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .love-image {
+    width: 300px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 768px) {
+  .love-image {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.love-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Left image - slides from left, positioned above */
+.love-image-left {
+  top: 15%;
+  left: 5%;
+  transform: translateX(-150%);
+}
+
+/* Right image - slides from right, positioned below */
+.love-image-right {
+  bottom: 15%;
+  right: 5%;
+  transform: translateX(150%);
+}
+
+/* Active state - images in final position when text is centered */
+.love-paragraph-container.active .love-image-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.love-paragraph-container.active .love-image-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
+/* Responsive positioning */
+@media (max-width: 1024px) {
+  .love-image-left {
+    top: 10%;
+    left: 3%;
+  }
+  
+  .love-image-right {
+    bottom: 10%;
+    right: 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .love-image-left {
+    top: 5%;
+    left: 2%;
+  }
+  
+  .love-image-right {
+    bottom: 5%;
+    right: 2%;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

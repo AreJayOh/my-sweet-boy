@@ -1,0 +1,8 @@
+.gallery-container {
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.gallery-container img {
+  transition: opacity 0.3s ease;
+}
