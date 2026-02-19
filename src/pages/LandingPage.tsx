@@ -132,10 +132,10 @@ export default function LandingPage() {
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/public/photos/1.jpg" alt="Memory" />
+            <img src="/photos/1.jpg" alt="Memory" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/public/photos/2.jpg" alt="Memory" />
+            <img src="/photos/2.jpg" alt="Memory" />
           </div>
           <p className="love-paragraph">
             <p>
@@ -150,10 +150,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/public/photos/3.jpg" alt="Memory" />
+            <img src="/photos/3.jpg" alt="Memory" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/public/photos/4.jpg" alt="Memory" />
+            <img src="/photos/4.jpg" alt="Memory" />
           </div>
           <p className="love-paragraph">
             You've shown me what it means to truly care for someone. The way you
@@ -166,10 +166,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/public/photos/5.jpg" alt="Memory" />
+            <img src="/photos/5.jpg" alt="Memory" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/public/photos/6.jpg" alt="Memory" />
+            <img src="/photos/6.jpg" alt="Memory" />
           </div>
           <p className="love-paragraph">
             I love how we can talk for hours about everything and nothing, how
@@ -182,10 +182,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/public/photos/7.jpg" alt="Memory" />
+            <img src="/photos/7.jpg" alt="Memory" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/public/photos/8.jpg" alt="Memory" />
+            <img src="/photos/8.jpg" alt="Memory" />
           </div>
           <p className="love-paragraph">
             Every day with you feels like a gift. I love the way you challenge
@@ -197,10 +197,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/public/photos/9.jpg" alt="Memory" />
+            <img src="/photos/9.jpg" alt="Memory" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/public/photos/10.jpg" alt="Memory" />
+            <img src="/photos/10.jpg" alt="Memory" />
           </div>
           <p className="love-paragraph">
             So yes, the answer is yes - a thousand times yes. I want to be your
@@ -236,7 +236,7 @@ export default function LandingPage() {
               }
             >
               <img
-                src={`/public/photos/${photo.filename}`}
+                src={`/photos/${photo.filename}`}
                 alt={photo.caption}
                 className="w-full h-full object-cover rounded-lg shadow-md transition-all"
               />
