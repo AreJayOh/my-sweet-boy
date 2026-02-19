@@ -63,7 +63,7 @@ export const photos: Photo[] = [
   {
     id: 10,
     filename: "10_30-01.webp",
-    date: "30 January",
+    date: "31 January",
     caption: "I don't need to see if you're not around.",
   },
   {
