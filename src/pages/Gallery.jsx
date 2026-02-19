@@ -15,7 +15,7 @@ const Gallery = () => {
   const PrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="flex absolute top-1/2 left-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
+      className="flex z-20 absolute top-1/2 left-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg"
     >
       <FiChevronLeft className="w-5 h-5" />
     </button>
@@ -24,7 +24,7 @@ const Gallery = () => {
   const NextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="flex absolute top-1/2 right-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
+      className="flex z-20 absolute top-1/2 right-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg"
     >
       <FiChevronRight className="w-5 h-5" />
     </button>
@@ -66,9 +66,10 @@ const Gallery = () => {
 
   return (
     <>
+    <div className="absolute w-full h-full z-10"></div>
       <a
         href="/"
-        className="z-10 p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
+        className="z-20 p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
       >
         <FaArrowLeft className="h-3 w-3" />
         Home
@@ -111,7 +112,7 @@ const Gallery = () => {
 
         {/* Thumbnails */}
 
-        <Slider {...thumbSettings} className="mb-4 absolute bottom-0 mx-4">
+        <Slider {...thumbSettings} className="mb-4 absolute bottom-0 mx-4 z-20">
           {photos.map((photo, idx) => (
             <div key={photo.id} className="px-1">
               <img
