@@ -92,8 +92,6 @@ const Gallery = () => {
                       src={`/photos/${photo.filename}`}
                       alt={photo.caption}
                       className="object-contain w-full max-h-full outline-none"
-                      loading="lazy"
-                      decoding="async"
                     />
                   </div>
                 </div>
@@ -119,8 +117,6 @@ const Gallery = () => {
                 className={`object-cover w-full h-10 md:h-18 rounded-lg border-2 ${
                   idx === currentSlide ? "border-amber-400" : "border-gray-300"
                 }`}
-                loading="lazy"
-                decoding="async"
               />
             </div>
           ))}
