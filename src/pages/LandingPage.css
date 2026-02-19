@@ -1,4 +1,3 @@
-/* Heart container */
 .heart-container {
   position: relative;
   width: 300px;
@@ -6,7 +5,6 @@
   margin: 0 auto;
 }
 
-/* Heart photo base styles */
 .heart-photo {
   position: absolute;
   width: 40px;
@@ -19,7 +17,6 @@
   opacity: 0;
 }
 
-/* Heart photo animation on scroll */
 .heart-photo.heart-photo-visible {
   animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
@@ -57,8 +54,6 @@
   }
 }
 
-
-/* Heart photo hover and expanded states */
 .heart-photo:hover,
 .heart-photo.expanded {
   transform: translate(-50%, -50%) scale(1.25);
@@ -66,7 +61,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Title animation */
 .heart-title-hidden {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -85,7 +79,6 @@
   }
 }
 
-/* Responsive sizes for larger screens */
 @media (min-width: 768px) {
   .heart-container {
     width: 400px;
@@ -122,7 +115,6 @@
   }
 }
 
-/* Bounce animation for heart icon */
 .bounce {
   animation: bounce 2s infinite;
 }
@@ -139,10 +131,6 @@
   }
 }
 
-
-
-
-/* Love section styles */
 .love-section {
   width: 100%;
   padding: 4rem 0;
@@ -168,7 +156,7 @@
   color: #1f2937;
   font-weight: 300;
   padding: 3rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.849);
   border-radius: 0.3rem;
   transition: box-shadow 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -189,7 +177,6 @@
   }
 }
 
-/* Image animations */
 .love-image {
   position: absolute;
   width: 400px;
@@ -221,21 +208,18 @@
   object-fit: cover;
 }
 
-/* Left image - slides from left, positioned above */
 .love-image-left {
   top: 15%;
   left: 5%;
   transform: translateX(-150%);
 }
 
-/* Right image - slides from right, positioned below */
 .love-image-right {
   bottom: 15%;
   right: 5%;
   transform: translateX(150%);
 }
 
-/* Active state - images in final position when text is centered */
 .love-paragraph-container.active .love-image-left {
   transform: translateX(0);
   opacity: 1;
@@ -247,8 +231,6 @@
 }
 
 
-
-/* Responsive positioning */
 @media (max-width: 1024px) {
   .love-image-left {
     top: 10%;
@@ -273,7 +255,6 @@
   }
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }

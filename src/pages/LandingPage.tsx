@@ -37,7 +37,6 @@ export default function LandingPage() {
         }
       });
 
-      // Check if heart section is in view
       if (heartSectionRef.current) {
         const rect = heartSectionRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -126,7 +125,6 @@ export default function LandingPage() {
         </h1>
       </div>
 
-      {/* Love paragraphs with animated images */}
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
@@ -148,11 +146,11 @@ export default function LandingPage() {
           <p className="love-paragraph">
             <p>
               My immediate instict is to do a bit. Something like, "Uhm, I guess
-              so," or "I'll think about it." But after pondering for a little
+              so," or "I'll think about it." <br /><br />But after pondering for a little
               while, I've decided to use this as a platform to tell you how much
               I love you and how much you mean to me. You'll get the answer
               eventually, I swear. Time to exercise a little bit of the patience
-              we would talk about. <br />
+              we would talk about. <br /><br />
               Here it goes...
             </p>
           </p>
@@ -179,10 +177,10 @@ export default function LandingPage() {
             It's crazy how much you remember about our first date. Most of what
             I can to recall is feeling relatively calm at first, thinking, "it's
             just another first date." <br />I got a little nervous stepping out
-            of my car, but as I saw this beautiful smiley boy walking towards
+            of my car, but as I saw this beautiful, smiley boy walking towards
             me, my brain shut down and all I could think was, <br />
             <br />"
-            <span className="font-semibold">
+            <span className="font-semibold italic">
               HOLY SHIT HOLY SHIT HOOOOLLLYYY SHHIIIITTTT!
             </span>
             " <br />
@@ -208,14 +206,14 @@ export default function LandingPage() {
             />
           </div>
           <p className="love-paragraph">
-            I still think it's a bit unreal that this person who I felt so
-            intensely attracted to on first sight just ended up revealing more
-            and more characteristics that drew me in closer and closer. <br />
-            This random dude from the internet turned out to be not only
+            I still think it's a bit unreal. This person who I felt so
+            intensely attracted to on first sight, just ended up revealing more
+            and more characteristics that kept drawing me in.<br /><br />
+            This random dude from the internet turned out to not only be
             insanely hot in real life, but also kind, and caring. He's wildly
-            smart, tremendously funny, and scarily charasmatic. And even
-            crazier, <br />
-            <span className="font-semibold">HE'S INTO ME TOO!</span>
+            smart, tremendously funny, and scarily charasmatic. <br /><br />What's even
+            more wild is that <br />
+            <span className="font-semibold italic">HE'S INTO ME TOO!</span>
           </p>
         </div>
 
@@ -270,16 +268,16 @@ export default function LandingPage() {
             you, but I need to save some content for future projects. So, for
             now, I'll just say this: <br />
             <br />I love you for being the person that you are, and for sharing
-            that person with me. I love you for being the person I want to share
-            infinitely more memories and laughs with. <br /><br /><span className= "italic">You mean the world to me,
+            that person with me. I love you for being the person with whom I want to share
+            infinitely more memories. <br /><br /><span className= "italic">You mean the world to me,
             Tristan.</span>
           </p>
         </div>
       </div>
 
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl md:text-7xl text-gray-900 italic text-center mb-2 px-2">
-          So, with all of that in mind, my final answer is...
+        <h1 className="text-2xl md:text-6xl text-gray-900 italic text-center mb-2 px-2">
+          So, with all of that in mind,<br /> my final answer is...
         </h1>
       </div>
 
@@ -320,7 +318,7 @@ export default function LandingPage() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1 z-10">
             <a
               href="/gallery"
-              className={`text-3xl md:text-5xl font-bold text-gray-900 mb-12 ${heartVisible ? "heart-title-visible" : "heart-title-hidden"}`}
+              className={`text-4xl md:text-5xl font-bold text-gray-900 mb-12 ${heartVisible ? "heart-title-visible" : "heart-title-hidden"}`}
             >
               Yes!
             </a>
@@ -330,7 +328,7 @@ export default function LandingPage() {
           One thousand times yes.
         </h1>
 
-        <h1 className="text-xl md:text-3xl text-gray-900 font-semibold">
+        <h1 className="text-xl md:text-3xl text-gray-900 font-semibold mb-28 md:m-2">
           I love you so much, Tristan.
         </h1>
       </div>

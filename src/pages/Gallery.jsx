@@ -1,5 +1,5 @@
 // src/pages/Gallery.jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaArrowLeft } from "react-icons/fa";
@@ -82,8 +82,6 @@ const Gallery = () => {
           <h1 className="text-3xl text-gray-900 text-center mb-10 mt-8">
             Gallery
           </h1>
-
-          {/* Main Carousel */}
           <div className="bg-gray-800 rounded-lg mb-6 mx-4">
             <Slider {...mainSettings}>
               {photos.map((photo) => (
@@ -103,14 +101,11 @@ const Gallery = () => {
             </Slider>
           </div>
 
-          {/* Dynamic Caption */}
           <div className="text-center h-24 mx-4">
             <p className="text-sm text-gray-500">{photos[currentSlide].date}</p>
             <p className="font-medium mt-2">{photos[currentSlide].caption}</p>
           </div>
         </div>
-
-        {/* Thumbnails */}
 
         <Slider {...thumbSettings} className="mb-4 absolute bottom-0 mx-4 z-20">
           {photos.map((photo, idx) => (
