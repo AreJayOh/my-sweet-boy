@@ -132,7 +132,7 @@ export default function LandingPage() {
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/1_20-01.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.jpg." alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
             <img src="/photos/1_20-01.jpg" alt="Memory" loading="lazy" decoding="async" />
@@ -166,10 +166,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/5.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/6.jpg" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/1_20-01.jpg" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             I love how we can talk for hours about everything and nothing, how
