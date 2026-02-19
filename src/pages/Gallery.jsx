@@ -35,7 +35,8 @@ const Gallery = () => {
     ref: (slider) => setNav1(slider),
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipeToSlide: true,
+    swipe: false,  
+    swipeToSlide: false,
     infinite: true,
     arrows: true,
     adaptiveHeight: true,
@@ -67,7 +68,7 @@ const Gallery = () => {
     <>
       <a
         href="/"
-        className="p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
+        className="z-10 p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
       >
         <FaArrowLeft className="h-3 w-3" />
         Home
@@ -116,7 +117,7 @@ const Gallery = () => {
               <img
                 src={`/photos/${photo.filename}`}
                 alt={photo.caption}
-                className={`object-cover w-full h-10 md:h-18 rounded-lg border-2 ${
+                className={`gallery-img object-cover w-full h-10 md:h-18 rounded-lg border-2 ${
                   idx === currentSlide ? "border-amber-400" : "border-gray-300"
                 }`}
                 loading="lazy"

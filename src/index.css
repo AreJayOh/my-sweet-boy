@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.gallery-img {
+  touch-action: pinch-zoom;
+}
