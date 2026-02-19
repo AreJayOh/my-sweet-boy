@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaHeart } from "react-icons/fa";
-import { photos } from "../data/photos";
+import { photos, LandingPhotos } from "../data/photos";
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -17,7 +17,6 @@ export default function LandingPage() {
         const windowHeight = window.innerHeight;
         const containerCenter = rect.top + rect.height / 2;
 
-        // Check if paragraph is centered in viewport
         const isCentered =
           containerCenter > windowHeight * 0.3 &&
           containerCenter < windowHeight * 0.9;
@@ -132,10 +131,10 @@ export default function LandingPage() {
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/1_20-01.webp." alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/1.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/2.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             <p>
@@ -150,10 +149,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/3.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/4.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             You've shown me what it means to truly care for someone. The way you
@@ -166,10 +165,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/5.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/1_20-01.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/6.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             I love how we can talk for hours about everything and nothing, how
@@ -182,10 +181,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/7.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/7.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/8.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/8.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             Every day with you feels like a gift. I love the way you challenge
@@ -197,10 +196,10 @@ export default function LandingPage() {
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/9.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/9.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/10.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img src="/photos/landing/10.webp" alt="Memory" loading="lazy" decoding="async" />
           </div>
           <p className="love-paragraph">
             So yes, the answer is yes - a thousand times yes. I want to be your
