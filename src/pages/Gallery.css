@@ -6,3 +6,7 @@
 .gallery-container img {
   transition: opacity 0.3s ease;
 }
+
+img {
+  touch-action: pinch-zoom;
+}
