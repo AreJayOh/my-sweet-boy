@@ -69,10 +69,13 @@ const Gallery = () => {
         href="/"
         className="p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
       >
-        <FaArrowLeft className="h-3 w-3"/>
+        <FaArrowLeft className="h-3 w-3" />
         Home
       </a>
-      <div className="max-w-5xl mx-auto relative h-screen flex flex-col justify-between">
+      <div
+        className="max-w-5xl mx-auto relative flex flex-col justify-between"
+        style={{ height: "100dvh" }}
+      >
         <div>
           <h1 className="text-3xl text-gray-900 text-center mb-10 mt-8">
             Gallery
@@ -99,9 +102,7 @@ const Gallery = () => {
           {/* Dynamic Caption */}
           <div className="text-center h-24 mx-4">
             <p className="text-sm text-gray-500">{photos[currentSlide].date}</p>
-            <p className="font-medium mt-2">
-              {photos[currentSlide].caption}
-            </p>
+            <p className="font-medium mt-2">{photos[currentSlide].caption}</p>
           </div>
         </div>
 
