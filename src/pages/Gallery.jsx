@@ -15,7 +15,7 @@ const Gallery = () => {
   const PrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
+      className="flex absolute top-1/2 left-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
     >
       <FiChevronLeft className="w-5 h-5" />
     </button>
@@ -24,7 +24,7 @@ const Gallery = () => {
   const NextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="hidden md:flex absolute top-1/2 right-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
+      className="flex absolute top-1/2 right-4 transform -translate-y-1/2 transition-colors bg-yellow-400 hover:bg-yellow-500 text-black rounded-full p-2 shadow-lg z-10"
     >
       <FiChevronRight className="w-5 h-5" />
     </button>
