@@ -114,4 +114,58 @@ export const photos: Photo[] = [
     date: '9 February',
     caption: 'Homemade Ciabatta for my sweet angel boy.',
   },
+  {
+    id: 19,
+    filename: '19_10-02.jpg',
+    date: '10 February',
+    caption: 'The attention I got at the office was great exposure therapy for my fear of being perceived.',
+  },
+  {
+    id: 20,
+    filename: '20_11-02.jpg',
+    date: '11 February',
+    caption: 'Checking the Capital Craft menu before we went for dinner with your family after your run.',
+  },
+  {
+    id: 21,
+    filename: '21_12-02.jpg',
+    date: '12 February',
+    caption: 'I\'m so glad you liked your bookmark, but I\'m so silly for accidentally showing you this photo.',
+  },
+  {
+    id: 22,
+    filename: '22_14-02.jpg',
+    date: '14 February',
+    caption: 'Valentine\'s Day Dress-Up.',
+  },
+  {
+    id: 23,
+    filename: '23_15-02.jpg',
+    date: '15 February',
+    caption: 'Trying to find new things to like at Plato before surprising you with a Flat White w/ Soy.',
+  },
+  {
+    id: 24,
+    filename: '24_16-02.jpg',
+    date: '16 February',
+    caption: 'I\m still unsure about yellow, but I\'m so sure about you.',
+  },
+  {
+    id: 25,
+    filename: '25_17-02.jpg',
+    date: '17 February',
+    caption: 'Office Sip-and-Paint. I had fun, but still thought about you the whole time',
+  },
+  {
+    id: 26,
+    filename: '26_18-02.jpg',
+    date: '18 February',
+    caption: 'You are literally the cutest, sweetest thing to ever walk this planet. Thank you.',
+  },
+  {
+    id: 27,
+    filename: '27_19-02.jpg',
+    date: '19 February',
+    caption: 'Breakfast pancakes and strawberry coulis for my favourite boy.',
+  },
 ];
