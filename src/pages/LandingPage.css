@@ -142,9 +142,6 @@
 
 
 
-
-
-
 /* Love section styles */
 .love-section {
   width: 100%;
@@ -153,7 +150,7 @@
 
 .love-paragraph-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,23 +169,23 @@
   font-weight: 300;
   padding: 3rem;
   background: white;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   transition: box-shadow 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .love-paragraph-container:nth-of-type(2n + 2).active2 .love-paragraph {
-  box-shadow: 0 0 0 10px rgba(240, 222, 59, 0.986);
+  box-shadow: 0 0 0 5px rgba(240, 222, 59, 0.589);
 }
 
 .love-paragraph-container:nth-of-type(2n + 1).active2 .love-paragraph {
-  box-shadow: 0 0 0 10px rgb(174, 110, 218);
+  box-shadow: 0 0 0 5px rgb(174, 110, 218, 0.5);
 }
 
 @media (max-width: 768px) {
   .love-paragraph {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 1rem;
   }
 }
 
@@ -199,7 +196,6 @@
   height: 300px;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1),
               opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;

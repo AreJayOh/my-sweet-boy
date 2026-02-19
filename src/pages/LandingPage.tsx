@@ -18,7 +18,7 @@ export default function LandingPage() {
         const containerCenter = rect.top + rect.height / 2;
 
         const isCentered =
-          containerCenter > windowHeight * 0.3 &&
+          containerCenter > windowHeight * 0.01 &&
           containerCenter < windowHeight * 0.9;
         const isCentered2 =
           containerCenter > windowHeight * 0.2 &&
@@ -42,8 +42,7 @@ export default function LandingPage() {
         const rect = heartSectionRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Trigger animation when section is 30% visible from the top
-        if (rect.top < windowHeight * 0.05 && rect.bottom > 0) {
+        if (rect.top < windowHeight * 0.5 && rect.bottom > 0) {
           setHeartVisible(true);
         } else {
           setHeartVisible(false);
@@ -52,7 +51,7 @@ export default function LandingPage() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -131,83 +130,157 @@ export default function LandingPage() {
       <div className="love-section">
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/landing/1.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/1.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/landing/2.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/2.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="love-paragraph">
             <p>
-              From the moment I met you, I knew there was something special
-              about you. Your smile lights up every room you walk into, and your
-              laugh is the most beautiful sound I've ever heard. You make every
-              ordinary moment feel extraordinary, and I can't imagine my days
-              without you in them.
+              My immediate instict is to do a bit. Something like, "Uhm, I guess
+              so," or "I'll think about it." But after pondering for a little
+              while, I've decided to use this as a platform to tell you how much
+              I love you and how much you mean to me. You'll get the answer
+              eventually, I swear. Time to exercise a little bit of the patience
+              we would talk about. <br />
+              Here it goes...
             </p>
           </p>
         </div>
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/landing/3.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/3.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/landing/4.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/4.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="love-paragraph">
-            You've shown me what it means to truly care for someone. The way you
-            listen when I talk, the way you remember the little things I
-            mention, and the way you always know how to make me feel better when
-            I'm down - these are the things that make my heart skip a beat every
-            single day.
+            It's crazy how much you remember about our first date. Most of what
+            I can to recall is feeling relatively calm at first, thinking, "it's
+            just another first date." <br />I got a little nervous stepping out
+            of my car, but as I saw this beautiful smiley boy walking towards
+            me, my brain shut down and all I could think was, <br />
+            <br />"
+            <span className="font-semibold">
+              HOLY SHIT HOLY SHIT HOOOOLLLYYY SHHIIIITTTT!
+            </span>
+            " <br />
+            <br /> My immediate (and subsequent) attraction to you was INSANE!
           </p>
         </div>
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/landing/5.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/5.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/landing/6.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/6.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="love-paragraph">
-            I love how we can talk for hours about everything and nothing, how
-            we can sit in comfortable silence, and how even the simplest
-            activities become adventures when I'm with you. You make me want to
-            be a better person, and you inspire me to chase my dreams because
-            you believe in me.
+            I still think it's a bit unreal that this person who I felt so
+            intensely attracted to on first sight just ended up revealing more
+            and more characteristics that drew me in closer and closer. <br />
+            This random dude from the internet turned out to be not only
+            insanely hot in real life, but also kind, and caring. He's wildly
+            smart, tremendously funny, and scarily charasmatic. And even
+            crazier, <br />
+            <span className="font-semibold">HE'S INTO ME TOO!</span>
           </p>
         </div>
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/landing/7.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/7.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/landing/8.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/8.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="love-paragraph">
-            Every day with you feels like a gift. I love the way you challenge
-            me, support me, and stand by my side through everything. You've
-            become my best friend, my confidant, and the person I want to share
-            every moment with. Being with you feels like coming home.
+            That crazy, whirlwind feeling still hasn't left me. Sometimes, when
+            I look at you while you're talking or doing something mundane, I
+            just get hit with this realization that that man is actually real,
+            and he's all mine. It's hard for me to put most of my thoughts into
+            words, but that feeling is beyond indescribable. I just get so
+            completely awestruck by how lucky I am to have you in my life.
+            <br /> <br /> You make it so easy for me to still find more and more
+            reasons to love you.
           </p>
         </div>
 
         <div className="love-paragraph-container">
           <div className="love-image love-image-left">
-            <img src="/photos/landing/9.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/9.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="love-image love-image-right">
-            <img src="/photos/landing/10.webp" alt="Memory" loading="lazy" decoding="async" />
+            <img
+              src="/photos/landing/10.webp"
+              alt="Memory"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="love-paragraph">
-            So yes, the answer is yes - a thousand times yes. I want to be your
-            girlfriend, your partner, and your person. I want to create more
-            memories with you, laugh with you, grow with you, and build
-            something beautiful together. You mean the world to me, Tristan.
+            I could genuinely go on and on about all the things I love about
+            you, but I need to save some content for future projects. So, for
+            now, I'll just say this: <br />
+            <br />I love you for being the person that you are, and for sharing
+            that person with me. I love you for being the person I want to share
+            infinitely more memories and laughs with. <br /><br /><span className= "italic">You mean the world to me,
+            Tristan.</span>
           </p>
         </div>
+      </div>
+
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
+        <h1 className="text-3xl md:text-7xl text-gray-900 italic text-center mb-2 px-2">
+          So, with all of that in mind, my final answer is...
+        </h1>
       </div>
 
       <div
@@ -246,16 +319,18 @@ export default function LandingPage() {
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1 z-10">
             <a
-            href="/gallery"
+              href="/gallery"
               className={`text-3xl md:text-5xl font-bold text-gray-900 mb-12 ${heartVisible ? "heart-title-visible" : "heart-title-hidden"}`}
             >
               Yes!
             </a>
           </div>
         </div>
+        <h1 className="text-xl md:text-3xl text-gray-900 mt-28">
+          One thousand times yes.
+        </h1>
 
-
-        <h1 className="text-xl md:text-3xl text-gray-900 mt-28 font-semibold">
+        <h1 className="text-xl md:text-3xl text-gray-900 font-semibold">
           I love you so much, Tristan.
         </h1>
       </div>
