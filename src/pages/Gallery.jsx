@@ -35,7 +35,7 @@ const Gallery = () => {
     ref: (slider) => setNav1(slider),
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: false,  
+    swipe: false,
     swipeToSlide: false,
     infinite: true,
     arrows: true,
@@ -66,7 +66,7 @@ const Gallery = () => {
 
   return (
     <>
-    <div className="absolute w-full h-full z-10"></div>
+      <div className="absolute w-full h-full z-10"></div>
       <a
         href="/"
         className="z-20 p-2 md:px-3 md:py-2 m-4 mt-8 md:mt-4 bg-yellow-400 text-gray-900 font-medium rounded-lg hover:bg-yellow-500 transition-colors absolute top-0 left-0 flex justify-center items-center gap-2 md:gap-3 text-sm"
@@ -82,7 +82,11 @@ const Gallery = () => {
           <h1 className="text-3xl text-gray-900 text-center mb-10 mt-8">
             Gallery
           </h1>
-          <div className="bg-gray-800 rounded-lg mb-6 mx-4">
+          <div className="bg-gray-800 rounded-lg mb-6 mx-4 relative">
+            <div className="absolute top-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded-md z-10">
+              {currentSlide + 1} / {photos.length}
+            </div>
+
             <Slider {...mainSettings}>
               {photos.map((photo) => (
                 <div key={photo.id} className="p-2 md:p-4 h-80 md:h-[60vh]">
