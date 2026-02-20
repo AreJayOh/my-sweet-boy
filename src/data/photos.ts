@@ -176,6 +176,12 @@ export const photos: Photo[] = [
     date: "19 February",
     caption: "Breakfast pancakes and strawberry coulis for my favourite boy.",
   },
+  {
+    id: 28,
+    filename: "20260220_135723.webp",
+    date: "20 February",
+    caption: "Had to be sneaky here. I had a pen in my pocket for a reason.",
+  },
 ];
 
 export interface LandingPhoto {
